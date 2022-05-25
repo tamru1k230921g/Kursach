@@ -1,0 +1,2137 @@
+.wrapper {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #ffffff;
+}
+.conteiner {
+  max-width: 1180px;
+  margin: 0px 20px 0px 20px;
+  padding: 0px 10px;
+}
+
+.liner {
+  margin: auto;
+  width: 60%;
+  margin-top: 20px;
+  background-color: #000000;
+}
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 80px;
+  width: 100%;
+  z-index: 50;
+  .header_logo {
+    flex: 0 0 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    > img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  .header__burger {
+    display: none;
+  }
+  .header_body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    .header_menu {
+      .header_list {
+        display: flex;
+        position: relative;
+        z-index: 2;
+      }
+      .header_list > li {
+        list-style: none;
+        height: 20px;
+        padding: 15px;
+        text-align: justify;
+        border-right: 1px solid#000411;
+        > ul {
+          display: none;
+        }
+        .header_link {
+          color: #ffffff;
+          text-transform: uppercase; //?
+          font-size: 18px;
+          text-decoration: none;
+        }
+        .header_forma_regis {
+          margin-left: 10px;
+          background-color: #427ff6;
+          opacity: 60%;
+          border: 1px solid;
+          height: 37px;
+          width: 143px;
+          border-radius: 90px;
+          text-align: center;
+          margin-top: -8px;
+          > p {
+            margin-top: 7px;
+          }
+        }
+        .header_forma_regis:hover {
+          margin-left: 10px;
+          background-color: #000000;
+          opacity: 100%;
+          border: 1px solid rgb(255, 255, 255);
+          color: #ffffff;
+          height: 37px;
+          width: 143px;
+          border-radius: 90px;
+          text-align: center;
+          > p {
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+    .header_list > li:first-child {
+      border-left: 1px solid #babbbb;
+    }
+    .header_list > li:nth-child(4) {
+      border-right: 1px solid #babbbb;
+    }
+    .header_list > li:last-child {
+      border-right: 0px;
+    }
+    .header_list > li:hover {
+      background-color: #000411;
+      > ul {
+        display: block;
+        position: absolute;
+        min-width: 200px;
+        background: #e4e4e5;
+        > li {
+          list-style: none;
+          margin-left: -40px;
+          border: 1px solid #c7c8ca;
+          margin-top: 15px;
+          font-size: 25px;
+          > a {
+            text-decoration: none;
+            color: #000000;
+            padding: 10px;
+            text-transform: none;
+          }
+        }
+        > li:hover {
+          color: #000000;
+          background-color: #ffffff;
+        }
+      }
+    }
+    .header_list > li.header_forma_regis:hover {
+      background-color: #ffffff;
+    }
+  }
+}
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5e5272;
+  z-index: 2;
+}
+@mixin footer_active {
+  margin-top:$footer-top;
+  transition: all 0.9s ease 0.1s;
+}
+@mixin pokaz_block {
+  display: block;
+  margin-top: 41px;
+  transition: all 0.9s ease 5s; 
+}
+@mixin none_block{
+  display: none;
+}
+$footer-top:78vw;
+
+//------->767px
+@mixin footer_active_2 {
+  margin-top:$footer-top_2;
+  transition: all 0.9s ease 0.1s;
+}
+$footer-top_2:93vw;
+
+
+@media (min-width: 1200px) {
+  .main {
+    padding: 30px 0px 0px 0px;
+    .first_body {
+      background-image: url("/img/Контакты_fon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      padding-top: 15vw;
+      height: 300px;
+      .first_body_h1 {
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
+        padding: 24px 0 38px 0;
+        letter-spacing: 0.5px;
+      }
+    }
+    .second_body {
+      width: 40vw;
+      margin: auto;
+      text-align: center;
+      > p {
+        text-align: justify;
+      }
+    }
+    .block {
+      margin-top: 50px;
+      margin-bottom: 15px;
+      .bloсk_1 {
+        padding-top: 50px;
+        margin-left: 25%;
+        width: 50%;
+        padding-left: 80px;
+        height: 80px;
+        border: 2px solid;
+        z-index: 3;
+        position: relative;
+        ///-----span_1
+        .gramata_1 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 900px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_1.active {
+          display: block;
+          margin-top: 41px;
+          transition: all 0.9s ease 5s;
+        }
+
+        .span_1 {
+          margin-left: 95%;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3;
+          margin-top: -45px;
+          > span {
+            background-color: #ff0000;
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+          }
+        }
+        .span_1.active:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        .span_1.active:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        .span_1.active > span {
+          transform: scale(0);
+        }
+        .span_1:before,
+        .span_1:after {
+          content: "";
+          background-color: #ff0000;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        .span_1:before {
+          top: 10px;
+          transform: rotate(-90deg);
+        }
+        .span_1:after {
+          bottom: 8px;
+        }
+      }
+      .bloсk_2 {
+        padding-top: 50px;
+        margin-left: 25%;
+        width: 50%;
+        height: 80px;
+        padding-left: 80px;
+        border: 2px solid;
+        z-index: 4;
+        position: relative;
+        ///---------span_2
+        .gramata_2 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 900px;
+          background-image: url("/img/gramata_1.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_2.active {
+          display: block;
+          margin-top: 41px;
+          transition: all 0.9s ease 5s;
+        }
+
+        .span_2 {
+          margin-left: 95%;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3;
+          margin-top: -45px;
+          > span {
+            background-color: #ff0000;
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+          }
+        }
+        .span_2.active:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        .span_2.active:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        .span_2.active > span {
+          transform: scale(0);
+        }
+        .span_2:before,
+        .span_2:after {
+          content: "";
+          background-color: #ff0000;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        .span_2:before {
+          top: 9px;
+          transform: rotate(-90deg);
+        }
+        .span_2:after {
+          bottom: 8px;
+        }
+      }
+      //--------------span 3
+      .bloсk_3 {
+        padding-top: 50px;
+        margin-left: 25%;
+        width: 50%;
+        height: 80px;
+        padding-left: 80px;
+        border: 2px solid;
+        z-index: 4;
+        position: relative;
+        .gramata_3 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 900px;
+          background-image: url("/img/gramata_3.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_3.active {
+          display: block;
+          margin-top: 41px;
+          transition: all 5s ease 0s;
+        }
+
+        .span_3 {
+          margin-left: 95%;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3;
+          margin-top: -45px;
+          > span {
+            background-color: #ff0000;
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+          }
+        }
+        .span_3.active:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        .span_3.active:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        .span_3.active > span {
+          transform: scale(0);
+        }
+        .span_3:before,
+        .span_3:after {
+          content: "";
+          background-color: #ff0000;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        .span_3:before {
+          top: 9px;
+          transform: rotate(-90deg);
+        }
+        .span_3:after {
+          bottom: 8px;
+        }
+      }
+
+      .bloсk_1.none {
+        display:none;
+      }
+
+      .bloсk_3.none {
+          display:none;
+      }
+      .bloсk_2.none {
+          display: none;
+      }
+    }
+  }
+  .footer_main.active {
+    @include footer_active;
+  }
+
+  .footer_main {
+    height: 90px;
+    .footer_main_end {
+      width: 100vw;
+      margin-left: -40px;
+      z-index: 1;
+      position: relative;
+      background: #000411;
+      height: 110px;
+      .footer_main_end_text {
+        height: auto;
+        width: auto;
+        padding-left: 30px;
+        .footer_main_end_text_family {
+          width: 122px;
+          margin-top: -30px;
+          height: 34px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 41px;
+          text-align: right;
+          letter-spacing: 0.445em;
+          margin: 0;
+          color: #ffffff;
+        }
+        .footer_main_end_text_pochta {
+          width: 200px;
+          padding-left: 120px;
+          margin-top: -25px;
+          height: 25px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+        .footer_main_end_text_aftograf {
+          width: 209px;
+          height: 36px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+      }
+      .footer_main_end_icon_seti {
+        display: flex;
+        margin-top: -90px;
+        padding-left: 73vw;
+        height: 70px;
+        width: auto;
+        letter-spacing: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding: 30px 0px 0px 0px;
+    .first_body {
+      background-image: url("/img/Контакты_fon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      padding-top: 15vw;
+      height: 350px;
+      .first_body_h1 {
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
+        padding: 24px 0 38px 0;
+        letter-spacing: 0.5px;
+      }
+    }
+    .second_body {
+      width: 40vw;
+      margin: auto;
+      text-align: center;
+      > p {
+        text-align: justify;
+      }
+    }
+    .block {
+      .bloсk_1.none {
+       @include none_block()
+      }
+
+      .bloсk_3.none {
+        @include none_block()
+      }
+      .bloсk_2.none {
+        @include none_block()
+      }
+      margin-top: 50px;
+      margin-bottom: 15px;
+      .bloсk_1 {
+        padding-top: 10px;
+        margin-left: 20%;
+        width: 70%;
+        height: 80px;
+        padding-left: 0px;
+        border: 2px solid;
+        z-index: 3;
+        position: relative;
+        ///-----span_1
+        .gramata_1 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 700px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+          font-size: 15px;
+        }
+        .gramata_1.active {
+          @include pokaz_block()
+        }
+
+        .span_1 {
+          margin-left: 85%;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3;
+          padding: 0%;
+          margin-top: -44px;
+          > span {
+            background-color: #ff0000;
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            top: 8px;
+            transition: all 0.3s ease 0s;
+          }
+        }
+        .span_1.active:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        .span_1.active:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        .span_1.active > span {
+          transform: scale(0);
+        }
+        .span_1:before,
+        .span_1:after {
+          content: "";
+          background-color: #ff0000;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        .span_1:before {
+          top: 9px;
+          transform: rotate(-90deg);
+        }
+        .span_1:after {
+          bottom: 8px;
+        }
+      }
+      .bloсk_2 {
+        padding-top: 10px;
+        margin-left: 20%;
+        width: 70%;
+        height: 80px;
+        padding-left: 0px;
+        border: 2px solid;
+        z-index: 4;
+        position: relative;
+        ///---------span_2
+        .gramata_2 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 700px;
+          background-image: url("/img/gramata_1.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_2.active {
+          @include pokaz_block()
+        }
+
+        .span_2 {
+          margin-left: 85%;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3;
+          padding: 0%;
+          margin-top: -44px;
+          > span {
+            background-color: #ff0000;
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            top: 8px;
+            transition: all 0.3s ease 0s;
+          }
+        }
+        .span_2.active:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        .span_2.active:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        .span_2.active > span {
+          transform: scale(0);
+        }
+        .span_2:before,
+        .span_2:after {
+          content: "";
+          background-color: #ff0000;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        .span_2:before {
+          top: 9px;
+          transform: rotate(-90deg);
+        }
+        .span_2:after {
+          bottom: 8px;
+        }
+      }
+      //--------------span 3
+      .bloсk_3 {
+        padding-top: 10px;
+        margin-left: 20%;
+        width: 70%;
+        padding-left: 0px;
+        border: 2px solid;
+        z-index: 4;
+        height: 80px;
+        position: relative;
+        .gramata_3 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          display: none;
+          width: 100%;
+          height: 700px;
+          background-image: url("/img/gramata_3.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_3.active {
+         @include pokaz_block()
+        }
+        .bloсk_3.none {
+          display: none;
+        }
+        .bloсk_2.none {
+          opacity: 0;
+        }
+
+        .span_3 {
+          margin-left: 85%;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3;
+          padding: 0%;
+          margin-top: -44px;
+          > span {
+            background-color: #ff0000;
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            top: 8px;
+            transition: all 0.3s ease 0s;
+          }
+        }
+        .span_3.active:before {
+          transform: rotate(45deg);
+          top: 9px;
+        }
+        .span_3.active:after {
+          transform: rotate(-45deg);
+          bottom: 9px;
+        }
+        .span_3.active > span {
+          transform: scale(0);
+        }
+        .span_3:before,
+        .span_3:after {
+          content: "";
+          background-color: #ff0000;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+        .span_3:before {
+          top: 9px;
+          transform: rotate(-90deg);
+        }
+        .span_3:after {
+          bottom: 8px;
+        }
+      }
+    }
+  }
+  .footer_main.active {
+    margin-top: 60vw;
+    transition: all 0.9s ease 0.1s;
+  }
+
+  .footer_main {
+    height: 80px;
+    .footer_main_end {
+      width: 107.8%;
+      margin-left: -40px;
+      z-index: 1;
+      position: relative;
+      background: #000411;
+      height: 90px;
+      .footer_main_end_text {
+        height: auto;
+        width: auto;
+        padding-left: 30px;
+        .footer_main_end_text_family {
+          width: 122px;
+          margin-top: -30px;
+          height: 34px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 41px;
+          text-align: right;
+          letter-spacing: 0.445em;
+          margin: 0;
+          color: #ffffff;
+        }
+        .footer_main_end_text_pochta {
+          width: 200px;
+          padding-left: 120px;
+          margin-top: -25px;
+          height: 25px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+        .footer_main_end_text_aftograf {
+          width: 209px;
+          height: 36px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+      }
+      .footer_main_end_icon_seti {
+        display: flex;
+        margin-top: -90px;
+        padding-left: 73vw;
+        height: 70px;
+        width: auto;
+        letter-spacing: 20px;
+        > img {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    max-width: 993px;
+    .first_body {
+      background-image: url("/img/Контакты_fon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      padding-top: 15vw;
+      height: 350px;
+      .first_body_h1 {
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
+        padding: 24px 0 38px 0;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  .footer_main.active {
+    @include footer_active;
+  }
+  .footer_main {
+    height: 90px;
+    .footer_main_end {
+      width: 100vw;
+      z-index: 1;
+      position: relative;
+      background: #000411;
+      height: 100px;
+      margin-left: -38px;
+      padding-left: 5vw;
+      .footer_main_end_text {
+        height: auto;
+        width: auto;
+        padding-left: 0px;
+        margin-left: -15px;
+        .footer_main_end_text_family {
+          width: 122px;
+          margin-top: -30px;
+          height: 34px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 41px;
+          text-align: right;
+          letter-spacing: 0.445em;
+          margin: 0;
+          color: #ffffff;
+        }
+        .footer_main_end_text_pochta {
+          width: 200px;
+          padding-left: 120px;
+          margin-top: -25px;
+          height: 25px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+        .footer_main_end_text_aftograf {
+          width: 209px;
+          height: 36px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          opacity: 0.7;
+        }
+      }
+      .footer_main_end_icon_seti {
+        display: flex;
+        margin-top: -85px;
+        padding-left: 65vw;
+        height: 60px;
+        width: auto;
+        letter-spacing: 20px;
+      }
+    }
+  }
+}
+//-----------------mobile------------------
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 767px;
+  }
+  .body.lock {
+    overflow: hidden;
+  }
+  .conteiner {
+    max-width: none;
+  }
+  .header {
+    height: 30px;
+    .header_body {
+      height: 50px;
+      .header_menu {
+        position: fixed;
+        top: -150%;
+        overflow: auto;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #184567;
+        padding: 50px 10px 20px 0px;
+        transition: all 0.5s ease 0s;
+        .header_list {
+          display: block;
+          margin-top: 0px;
+          height: 10px;
+          width: 10px;
+        }
+        .header_list > li {
+          margin-top: 10px;
+          padding-top: 0%;
+          width: 25px;
+          border: 0px solid;
+          height: 5px;
+          text-align: center;
+          .header_link {
+            font-size: 8px;
+          }
+          > ul {
+            margin-top: -170px;
+            margin-left: 80;
+            overflow: auto;
+            text-align: left;
+            font-size: 8px;
+          }
+          .header_forma_regis {
+            height: 15px;
+            width: 50px;
+            margin-left: -13px;
+            margin-top: 0px;
+            text-align: center;
+            font-size: 5px;
+            margin-top: -50px;
+          }
+          .header_forma_regis:hover {
+            height: 15px;
+            width: 50px;
+            margin-left: -13px;
+            margin-top: 0px;
+            text-align: center;
+            font-size: 5px;
+            > p {
+              font-size: 10px;
+              margin-top: 7px;
+            }
+          }
+        }
+        .header_list > li:hover {
+          > ul {
+            display: block;
+            position: absolute;
+            min-width: 5px;
+            background: #9d9dc8;
+            margin-top: -20px;
+            margin-left: 40px;
+            > li {
+              list-style: none;
+              border: 1px solid #c7c8ca;
+              margin-top: 0px;
+              font-size: 8px;
+              > a {
+                text-decoration: none;
+                color: #000000;
+                padding: 10px;
+                text-transform: none;
+              }
+            }
+            > li:hover {
+              color: #000000;
+              background-color: #ffffff;
+            }
+          }
+        }
+      }
+      .header_menu.active {
+        top: 0px;
+      }
+      .header_logo {
+        flex: 0 0 40px;
+        margin-top: -20px;
+      }
+      .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        margin-top: -25px;
+      }
+      .header__burger > span {
+        background-color: #ffffff;
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        left: 0;
+        top: 5px;
+        transition: all 0.3s ease 0s;
+      }
+      .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 10px;
+      }
+      .header__burger.active::before {
+        transform: rotate(45deg);
+        bottom: 10px;
+      }
+      .header__burger.active > span {
+        transform: scale(0);
+      }
+      .header__burger:before,
+      .header__burger:after {
+        content: "";
+        background-color: #ffffff;
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+      }
+      .header__burger:after {
+        bottom: 9px;
+      }
+    }
+  }
+  .main {
+    .first_body {
+      background-image: url("/img/Контакты_fon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      padding-top: 15vw;
+      height: 150px;
+      .first_body_h1 {
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
+        padding: 24px 0 38px 0;
+        letter-spacing: 0.5px;
+      }
+    }
+    .second_body {
+      width: 50%;
+      margin: auto;
+      font-size: 15px;
+      text-align: center;
+      > p {
+        text-align: justify;
+        font-size: 10px;
+      }
+    }
+    .block{
+      $paddingLeft:15px;
+      font-size: 65%;
+      .bloсk_1{
+        padding-left: $paddingLeft;
+        .span_1{
+          margin-top: -25px;
+        }       
+      }
+      .bloсk_2{
+        padding-left: $paddingLeft;
+        .span_2{
+          margin-top: -25px;
+        }       
+      }
+      .bloсk_3{
+        padding-left: $paddingLeft;
+        .span_3{
+          margin-top: -25px;
+        }       
+      }
+    }
+  }
+
+  .footer_main.active {
+    @include footer_active_2;
+  }
+  .footer_main {
+    height: 50px;
+    .footer_main_end {
+      width: 95vw;
+      height: 70px;
+      .footer_main_end_text {
+        height: auto;
+        width: auto;
+        padding-left: 30px;
+        .footer_main_end_text_family {
+          font-size: 25px;
+        }
+        .footer_main_end_text_pochta {
+          font-size: 15px;
+        }
+        .footer_main_end_text_aftograf {
+          font-size: 15px;
+          margin-top: -15px;
+          padding-left: 35px;
+        }
+      }
+      .footer_main_end_icon_seti {
+        display: flex;
+        margin-top: -80px;
+        padding-left: 60vw;
+        height: 60px;
+        width: auto;
+        letter-spacing: 20px;
+        > img {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 540px){
+  
+  .main {
+    .block {
+      .bloсk_1.none {
+       @include none_block();
+      }
+
+      .bloсk_3.none {
+        @include none_block();
+      }
+      .bloсk_2.none {
+        @include none_block();
+      }
+      margin-top: 10px;
+      margin-bottom: 15px;
+      margin-left: 128px;
+      font-size: 6px;
+      .bloсk_1 {
+        height: 45px;
+        width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_1 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_1.active {
+          margin-top: 25px;
+        }
+
+        .span_1 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_1::after {
+          top: 4px;
+        }
+        .span_1::before {
+          top: 4px;
+        }
+        .span_1.active::after {
+          transform: rotate(45deg);
+        }
+        .span_1.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_2 {
+        height: 45px;
+        width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_2 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_2.active {
+          margin-top: 25px;
+        }
+        .span_2 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_2::after {
+          top: 4px;
+        }
+        .span_2::before {
+          top: 4px;
+        }
+        .span_2.active::after {
+          transform: rotate(45deg);
+        }
+        .span_2.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_3 {
+        height: 45px;
+        width: 250px;;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_3 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_3.active {
+          margin-top: 25px;
+        }
+        .span_3 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_3::after {
+          top: 4px;
+        }
+        .span_3::before {
+          top: 4px;
+        }
+        .span_3.active::after {
+          transform: rotate(45deg);
+        }
+        .span_3.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+    }
+  }
+  .footer_main.active {
+    margin-top: 60vw;
+  }
+  .footer_main {
+    height: 30px;
+    margin-top: 70px;
+    .footer_main_end {
+      width: 110.5%;
+      background: #000411;
+      height: 60px;
+      .footer_main_end_text {
+        height: 5px;
+        margin-top: 0px;
+        margin-left: -100px;
+        .footer_main_end_text_family {
+          width: 122px;
+          height: 5px;
+          margin-top: -60px;
+          font-size: 15px;
+          letter-spacing: 0.4em;
+        }
+        .footer_main_end_text_pochta {
+          margin-top: 2px;
+          font-size: 10px;
+          height: 5px;
+        }
+        .footer_main_end_text_aftograf {
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 26px;
+          padding-left: 90px;
+          margin-top: 0px;
+          height: 5px;
+        }
+      }
+
+      .footer_main_end_icon_seti {
+        height: 45px;
+        width: auto;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 65%;
+        letter-spacing: 5px;
+        > img {
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .main {
+    .block {
+      .bloсk_1.none {
+       @include none_block();
+      }
+
+      .bloсk_3.none {
+        @include none_block();
+      }
+      .bloсk_2.none {
+        @include none_block();
+      }
+      margin-top: 10px;
+      margin-bottom: 15px;
+      margin-left: 45px;
+      font-size: 6px;
+      .bloсk_1 {
+        height: 45px;
+        width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_1 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_1.active {
+          margin-top: 25px;
+        }
+
+        .span_1 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_1::after {
+          top: 4px;
+        }
+        .span_1::before {
+          top: 4px;
+        }
+        .span_1.active::after {
+          transform: rotate(45deg);
+        }
+        .span_1.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_2 {
+        height: 45px;
+        width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_2 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_2.active {
+          margin-top: 25px;
+        }
+        .span_2 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_2::after {
+          top: 4px;
+        }
+        .span_2::before {
+          top: 4px;
+        }
+        .span_2.active::after {
+          transform: rotate(45deg);
+        }
+        .span_2.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_3 {
+        height: 45px;
+        width: 250px;;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_3 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_3.active {
+          margin-top: 25px;
+        }
+        .span_3 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_3::after {
+          top: 4px;
+        }
+        .span_3::before {
+          top: 4px;
+        }
+        .span_3.active::after {
+          transform: rotate(45deg);
+        }
+        .span_3.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+    }
+  }
+  .footer_main.active {
+    margin-top: 75vw;
+  }
+  .footer_main {
+    height: 30px;
+    margin-top: 70px;
+    .footer_main_end {
+      width: 115.7%;
+      background: #000411;
+      height: 60px;
+      .footer_main_end_text {
+        height: 5px;
+        margin-top: 0px;
+        margin-left: -100px;
+        .footer_main_end_text_family {
+          width: 122px;
+          height: 5px;
+          margin-top: -60px;
+          font-size: 15px;
+          letter-spacing: 0.4em;
+        }
+        .footer_main_end_text_pochta {
+          margin-top: 2px;
+          font-size: 10px;
+          height: 5px;
+        }
+        .footer_main_end_text_aftograf {
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 26px;
+          padding-left: 90px;
+          margin-top: 0px;
+          height: 5px;
+        }
+      }
+
+      .footer_main_end_icon_seti {
+        height: 45px;
+        width: auto;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 65%;
+        letter-spacing: 5px;
+        > img {
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    .block {
+      .bloсk_1.none {
+       @include none_block();
+      }
+
+      .bloсk_3.none {
+        @include none_block();
+      }
+      .bloсk_2.none {
+        @include none_block();
+      }
+      margin-top: 10px;
+      margin-bottom: 15px;
+      margin-left: 45px;
+      font-size: 6px;
+      .bloсk_1 {
+        height: 45px;
+        width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_1 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_1.active {
+          margin-top: 25px;
+        }
+
+        .span_1 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_1::after {
+          top: 4px;
+        }
+        .span_1::before {
+          top: 4px;
+        }
+        .span_1.active::after {
+          transform: rotate(45deg);
+        }
+        .span_1.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_2 {
+        height: 45px;
+        width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_2 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_2.active {
+          margin-top: 25px;
+        }
+        .span_2 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_2::after {
+          top: 4px;
+        }
+        .span_2::before {
+          top: 4px;
+        }
+        .span_2.active::after {
+          transform: rotate(45deg);
+        }
+        .span_2.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_3 {
+        height: 45px;
+        width: 250px;;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_3 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 250px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_3.active {
+          margin-top: 25px;
+        }
+        .span_3 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_3::after {
+          top: 4px;
+        }
+        .span_3::before {
+          top: 4px;
+        }
+        .span_3.active::after {
+          transform: rotate(45deg);
+        }
+        .span_3.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+    }
+  }
+  .footer_main.active {
+    @include footer_active_2();
+  }
+  .footer_main {
+    height: 30px;
+    margin-top: 70px;
+    .footer_main_end {
+      width: 119.2%;
+      background: #000411;
+      height: 60px;
+      .footer_main_end_text {
+        height: 5px;
+        margin-top: 0px;
+        margin-left: -100px;
+        .footer_main_end_text_family {
+          width: 122px;
+          height: 5px;
+          margin-top: -60px;
+          font-size: 15px;
+          letter-spacing: 0.4em;
+        }
+        .footer_main_end_text_pochta {
+          margin-top: 2px;
+          font-size: 10px;
+          height: 5px;
+        }
+        .footer_main_end_text_aftograf {
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 26px;
+          padding-left: 90px;
+          margin-top: 0px;
+          height: 5px;
+        }
+      }
+
+      .footer_main_end_icon_seti {
+        height: 45px;
+        width: auto;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 65%;
+        letter-spacing: 5px;
+        > img {
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 340px) {
+  .body.lock {
+    overflow: hidden;
+  }
+  .conteiner {
+    max-width: none;
+  }
+  .header {
+    height: 30px;
+    .header_body {
+      height: 50px;
+      .header_menu {
+        position: fixed;
+        top: -150%;
+        overflow: auto;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #184567;
+        padding: 50px 10px 20px 0px;
+        transition: all 0.5s ease 0s;
+        .header_list {
+          margin-top: 0px;
+          height: 10px;
+          width: 10px;
+        }
+        .header_list > li {
+          margin-top: -10px;
+          padding-top: 0%;
+          width: 25px;
+          border: 0px solid;
+          height: 5px;
+          text-align: center;
+          .header_link {
+            font-size: 5px;
+          }
+          > ul {
+            margin-top: -170px;
+            margin-left: 80;
+            overflow: auto;
+            text-align: left;
+          }
+          .header_forma_regis {
+            height: 10px;
+            width: 50px;
+            margin-left: -10px;
+            text-align: center;
+            font-size: 5px;
+            margin-top: -50px;
+          }
+          .header_forma_regis:hover {
+            height: 10px;
+            width: 50px;
+            margin-left: -10px;
+            text-align: center;
+            font-size: 5px;
+            > p {
+              font-size: 10px;
+              margin-top: 7px;
+            }
+          }
+        }
+        .header_list > li:hover {
+          > ul {
+            display: block;
+            position: absolute;
+            min-width: 5px;
+            background: #9d9dc8;
+            margin-top: -20px;
+            margin-left: 40px;
+            > li {
+              list-style: none;
+              border: 1px solid #c7c8ca;
+              margin-top: 0px;
+              font-size: 5px;
+              > a {
+                text-decoration: none;
+                color: #000000;
+                padding: 10px;
+                text-transform: none;
+              }
+            }
+            > li:hover {
+              color: #000000;
+              background-color: #ffffff;
+            }
+          }
+        }
+      }
+      .header_menu.active {
+        top: 0px;
+      }
+      .header_logo {
+        flex: 0 0 40px;
+        margin-top: -20px;
+      }
+      .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        margin-top: -25px;
+      }
+      .header__burger > span {
+        background-color: #ffffff;
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        left: 0;
+        top: 5px;
+        transition: all 0.3s ease 0s;
+      }
+      .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 10px;
+      }
+      .header__burger.active > span {
+        transform: scale(0);
+      }
+      .header__burger:before,
+      .header__burger:after {
+        content: "";
+        background-color: #ffffff;
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+      }
+      .header__burger:after {
+        bottom: 9px;
+      }
+    }
+  }
+  .main {
+    padding-top: 15px;
+    .first_body {
+      background-image: url("/img/Контакты_fon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      padding-top: 4vw;
+      height: 60px;
+      .first_body_h1 {
+        text-align: center;
+        font-size: 5vw;
+        color: rgb(0, 0, 0);
+        padding: 24px 0 38px 0;
+        letter-spacing: 0.5px;
+      }
+    }
+    .second_body {
+      width: 50%;
+      margin: auto;
+      font-size: 4px;
+      text-align: center;
+      > p {
+        text-align: justify;
+        font-size: 3px;
+      }
+    }
+    .block {
+      .bloсk_1.none {
+       @include none_block();
+      }
+
+      .bloсk_3.none {
+        @include none_block();
+      }
+      .bloсk_2.none {
+        @include none_block();
+      }
+      margin-top: 10px;
+      margin-bottom: 15px;
+      margin-left: 45px;
+      .bloсk_1 {
+        height: 25px;
+        font-size: 4px;
+        width: 150px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_1 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 200px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_1.active {
+          margin-top: 15px;
+        }
+
+        .span_1 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_1::after {
+          top: 4px;
+        }
+        .span_1::before {
+          top: 4px;
+        }
+        .span_1.active::after {
+          transform: rotate(45deg);
+        }
+        .span_1.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_2 {
+        height: 25px;
+        font-size: 4px;
+        width: 150px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_2 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 200px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_2.active {
+          margin-top: 15px;
+        }
+        .span_2 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_2::after {
+          top: 4px;
+        }
+        .span_2::before {
+          top: 4px;
+        }
+        .span_2.active::after {
+          transform: rotate(45deg);
+        }
+        .span_2.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+      .bloсk_3 {
+        height: 25px;
+        font-size: 4px;
+        width: 150px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 0px;
+        .gramata_3 {
+          background-color: #184567;
+          position: absolute;
+          overflow: auto;
+          left: 0;
+          @include none_block();
+          width: 100%;
+          height: 200px;
+          background-image: url("/img/gramata.png");
+          transition: all 0.9s ease 0s;
+          background-size: 100% 100%;
+        }
+        .gramata_3.active {
+          margin-top: 15px;
+        }
+        .span_3 {
+          margin: 0px;
+          padding: 0%px;
+          height: 10px;
+          width: 10px;
+          margin-left: 88%;
+          margin-top: -13px;
+        }
+        .span_3::after {
+          top: 4px;
+        }
+        .span_3::before {
+          top: 4px;
+        }
+        .span_3.active::after {
+          transform: rotate(45deg);
+        }
+        .span_3.active::before {
+          transform: rotate(-45deg);
+          top: 4px;
+        }
+      }
+    }
+  }
+  .footer_main.active {
+    @include footer_active_2();
+    margin-top: 110vw;
+  }
+  .footer_main {
+    height: 30px;
+    margin-top: 70px;
+    .footer_main_end {
+      width: 132.2%;
+      background: #000411;
+      height: 60px;
+      .footer_main_end_text {
+        height: 5px;
+        margin-top: 0px;
+        margin-left: -100px;
+        .footer_main_end_text_family {
+          width: 122px;
+          height: 5px;
+          margin-top: -60px;
+          font-size: 10px;
+          letter-spacing: 0.4em;
+        }
+        .footer_main_end_text_pochta {
+          margin-top: 2px;
+          font-size: 6px;
+          height: 5px;
+        }
+        .footer_main_end_text_aftograf {
+          font-weight: 700;
+          font-size: 6px;
+          line-height: 26px;
+          padding-left: 90px;
+          margin-top: 0px;
+          height: 5px;
+        }
+      }
+
+      .footer_main_end_icon_seti {
+        height: 45px;
+        width: auto;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 70%;
+        letter-spacing: 5px;
+        > img {
+          height: 15px;
+        }
+      }
+    }
+  }
+}

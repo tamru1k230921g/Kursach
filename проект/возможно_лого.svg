@@ -1,0 +1,41 @@
+<svg width="70" height="26" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title transform="translate(-0.41623327136039734,6.139441013336182) translate(-19.30693817138672,-50.29704666137695) translate(20.29703712463379,49.40596008300781) ">background</title>
+  <g wfd-invisible="true" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="5.248354" x="0.573866" height="50" width="100"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+  <g stroke="null" id="svg_86">
+   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_315" y2="25.37732" x2="69.471673" y1="25.37732" x1="0.292072" stroke-width="1.5" stroke="#6D97AB" fill="#fff"/>
+   <path id="svg_324" d="m13.598599,19.385989l9.98126,-14.80788l9.98126,14.80788" stroke-width="1.5" stroke="#6D97AB" fill="#426373"/>
+   <line stroke="#6D97AB" stroke-linecap="null" stroke-linejoin="null" id="svg_325" y2="3.715026" x2="43.489788" y1="19.024955" x1="32.96378" stroke-width="1.5" fill="#fff"/>
+   <line stroke="#6D97AB" stroke-linecap="null" stroke-linejoin="null" id="svg_326" y2="8.742869" x2="47.574909" y1="4.624669" x1="43.489787" stroke-width="1.5" fill="#fff"/>
+   <path id="svg_327" d="m45.278529,19.798579l5.76383,-10.02812l5.76382,10.02812" stroke-width="1.5" stroke="#6D97AB" fill="#426373"/>
+   <line stroke="#6D97AB" stroke-linecap="null" stroke-linejoin="null" id="svg_329" y2="11.770009" x2="46.638399" y1="16.868688" x1="43.677874" stroke-width="1.5" fill="#fff"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_330" y2="9.056195" x2="51.079183" y1="9.056195" x1="41.539718" stroke-width="1.5" stroke="#6D97AB" fill="#fff"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_331" y2="19.418027" x2="38.414721" y1="19.500264" x1="45.898267" stroke-width="1.5" stroke="#6D97AB" fill="#fff"/>
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_332" y2="16.53974" x2="44.335768" y1="16.457504" x1="38.908141" stroke-width="1.5" stroke="#6D97AB" fill="#fff"/>
+   <line stroke="#6D97AB" stroke-linecap="null" stroke-linejoin="null" id="svg_333" y2="11.523297" x2="47.296292" y1="11.523298" x1="41.786428" stroke-width="1.5" fill="#fff"/>
+   <rect stroke="#6D97AB" id="svg_334" height="0.986841" width="0.657894" y="14.895005" x="21.556184" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_335" height="0.986841" width="0.657894" y="14.895005" x="24.023287" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_336" height="0.986841" width="0.657894" y="12.016718" x="21.556184" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_337" height="0.986841" width="0.657894" y="12.016718" x="24.023287" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_341" height="0.055167" width="0.036773" y="17.8826" x="52.066021" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_342" height="0.055167" width="0.036773" y="17.8826" x="50.280309" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_343" height="0.055167" width="0.036773" y="16.174527" x="52.066021" stroke-width="1.5" fill="#426373"/>
+   <rect stroke="#6D97AB" id="svg_344" height="0.055167" width="0.036773" y="16.174527" x="50.280309" stroke-width="1.5" fill="#426373"/>
+   <path stroke="#6D97AB" transform="rotate(-180 33.296836853027344,7.480024337768555) " id="svg_345" d="m24.065654,14.224811l9.231181,-13.489573l9.231181,13.489573l-18.462363,0z" stroke-width="1.5" fill="#426373"/>
+   <text stroke="#6D97AB" transform="rotate(-0.31286001205444336 33.952823638915966,22.11340141296462) matrix(0.2782562234377931,0,0,0.21805860731277718,46.96391872937688,30.4597936077265) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_346" y="-30.106486" x="-128.783825" stroke-width="0" fill="#426373">MysweetHouse</text>
+  </g>
+  <g stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="1.5" fill="#426373" stroke="#6D97AB" id="svg_321">
+   <line stroke="#426373" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_322" y2="19.015229" x2="14.249679" y1="19.015229" x1="0.835045" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+   <line stroke="#426373" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_323" y2="19.431463" x2="69.448663" y1="19.431463" x1="56.034029" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  </g>
+ </g>
+</svg>
